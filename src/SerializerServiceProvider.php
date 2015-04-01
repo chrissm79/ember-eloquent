@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use League\Fractal\Manager;
+use NuWave\Serializers\Ember\EmberSerializer;
 
 class SerializerServiceProvider extends ServiceProvider {
 

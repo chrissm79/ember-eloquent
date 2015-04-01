@@ -1,4 +1,4 @@
-<?php namespace NuWave\Serializers;
+<?php namespace NuWave\Serializers\Ember;
 
 use League\Fractal\Resource\ResourceInterface;
 use League\Fractal\Serializer\JsonApiSerializer;
