@@ -6,7 +6,7 @@ I have been working quite a bit with Ember recently and I wanted to create Ember
 sideloading. This proeject utilizes Fractal's JsonApiSerializer and tweaks it a bit to create json responses that 
 are consumable by ember-data.
 
-***This is still a work in progress, so if you have stumbled across this please do not use just yet**
+**This is still a work in progress, so if you have stumbled across this please do not use just yet**
 
 ### Example
 
