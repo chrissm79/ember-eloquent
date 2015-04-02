@@ -12,7 +12,7 @@ are consumable by ember-data.
 
 Install the composer package
 ```bash
-composer require nuwave/eloquent-ember
+composer require nuwave/ember-eloquent
 ```
 
 Publish the config file
