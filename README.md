@@ -1,4 +1,4 @@
-# Eloquent-Ember
+# Ember-Eloquent
 
 ###  Introduction
 
