@@ -1,5 +1,5 @@
 {
-    "name": "nuwave/eloquent-ember",
+    "name": "nuwave/ember-eloquent",
     "description": "Laravel package to translate api responses into ember-data readable formats.",
     "license": "MIT",
     "authors": [
