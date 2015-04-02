@@ -13,7 +13,7 @@ class SerializerServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $configPath = __DIR__ . '../../config/ember.php';
+        $configPath = __DIR__ . '/../config/ember.php';
 
         $this->publishes([
             $configPath => config_path('ember.php')
