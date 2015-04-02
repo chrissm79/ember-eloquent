@@ -6,7 +6,7 @@ class SerializerTranslator {
 
     public function toTranslatorHandler($model)
     {
-        $transformer = '';
+        $transformer = config('ember.namespace') . '\\' . $model . config('ember.suffix');
 
         if( ! class_exists($transformer))
         {
