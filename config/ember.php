@@ -6,7 +6,7 @@ return [
     | Transformer Namespace
     |---------------------------------------------------------------------
     |
-    | Set the default namespace for your translators
+    | Set the default namespace for your transformer
     |
     */
     'namespace' => 'App\Translators',
