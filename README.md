@@ -15,14 +15,14 @@ Install the composer package
 composer require nuwave/ember-eloquent
 ```
 
-Publish the config file
-```bash
-php artisan vendor:publish
-```
-
 Add the service provider to you app.php file
 ```php
 'NuWave\Serializers\SerializerServiceProvider',
+```
+
+Publish the config file
+```bash
+php artisan vendor:publish
 ```
 
 Create your model transformers (Fractal)
@@ -42,7 +42,7 @@ return [
     | Set the default namespace for your transformer
     |
     */
-    'namespace' => 'ExampleNamespace\Translators',
+    'namespace' => 'MyApp\Transformers',
 
     /*
     |---------------------------------------------------------------------
