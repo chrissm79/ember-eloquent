@@ -9,9 +9,9 @@ trait EmberTrait {
      * @param $name
      * @return array
      */
-    protected function emberResponse($model, $name)
+    protected function emberResponse($model, $name, $includes = [])
     {
-        return app('NuWave\\Serializers\\SerializerManager')->make($model, $name);
+        return app('NuWave\\Serializers\\SerializerManager')->make($model, $name, $includes);
     }
 
 }
