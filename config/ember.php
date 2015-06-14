@@ -9,7 +9,7 @@ return [
     | Set the default namespace for your transformer
     |
     */
-    'namespace' => 'App\Translators',
+    'namespace' => 'App\Transformers',
 
     /*
     |---------------------------------------------------------------------

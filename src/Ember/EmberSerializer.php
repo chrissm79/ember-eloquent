@@ -4,6 +4,19 @@ use League\Fractal\Resource\ResourceInterface;
 use League\Fractal\Serializer\JsonApiSerializer;
 
 class EmberSerializer extends JsonApiSerializer {
+    
+    /**
+     * Serialize an item.
+     *
+     * @param string $resourceKey
+     * @param array  $data
+     *
+     * @return array
+     */
+    public function item($resourceKey, array $data)
+    {
+        return array($resourceKey ?: 'data' => $data);
+    }
 
     /**
      * Serialize the included data.

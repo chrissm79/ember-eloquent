@@ -12,17 +12,17 @@ are consumable by ember-data.
 
 Install the composer package
 ```bash
-composer require nuwave/eloquent-ember
-```
-
-Publish the config file
-```bash
-php artisan vendor:publish
+composer require nuwave/ember-eloquent
 ```
 
 Add the service provider to you app.php file
 ```php
 'NuWave\Serializers\SerializerServiceProvider',
+```
+
+Publish the config file
+```bash
+php artisan vendor:publish
 ```
 
 Create your model transformers (Fractal)
@@ -42,7 +42,7 @@ return [
     | Set the default namespace for your transformer
     |
     */
-    'namespace' => 'ExampleNamespace\Translators',
+    'namespace' => 'MyApp\Transformers',
 
     /*
     |---------------------------------------------------------------------
