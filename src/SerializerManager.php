@@ -71,7 +71,7 @@ class SerializerManager {
             {
                 $resource->setMetaValue('page', $data->currentPage());
                 $resource->setMetaValue('per_page', $data->perPage());
-                $resource->setMetaValue('total', $data->total());
+                $resource->setMetaValue('total', $data->lastPage());
             }
 
             return $resource;
