@@ -20,5 +20,18 @@ return [
     |
     | Default value is null
     */
-    'suffix' => null
+    'suffix' => null,
+
+    /*
+    |---------------------------------------------------------------------
+    | Ember-Cli-Pagination
+    |---------------------------------------------------------------------
+    |
+    | If you are using the ember-cli-pagination addon, you can set the
+    | serializer to transform the meta data into the addon's default format.
+    |
+    | https://github.com/mharris717/ember-cli-pagination
+    |
+    */
+    'ember-cli-pagination' => false,
 ];
