@@ -65,15 +65,13 @@ class SerializerManager {
         if($data instanceof LengthAwarePaginator)
         {
             $resource = new \League\Fractal\Resource\Collection($data->getCollection(), $transformer, snake_case(str_plural($model)));
+            $resource->setPaginator(new IlluminatePaginatorAdapter($data));
+
             if (config('ember.ember-cli-pagination'))
             {
-                $resource->setMeta('page', $data->currentPage());
-                $resource->setMeta('per_page', $data->perPage());
-                $resource->setMeta('total', $data->getTotal());
-            }
-            else
-            {
-                $resource->setPaginator(new IlluminatePaginatorAdapter($data));
+                $resource->setMetaValue('page', $data->currentPage());
+                $resource->setMetaValue('per_page', $data->perPage());
+                $resource->setMetaValue('total', $data->total());
             }
 
             return $resource;
